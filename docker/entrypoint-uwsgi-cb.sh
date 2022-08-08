@@ -29,6 +29,7 @@ processes = ${DD_UWSGI_NUM_OF_PROCESSES:-2}
 threads = ${DD_UWSGI_NUM_OF_THREADS:-2}
 threaded-logger
 buffer-size = ${DD_UWSGI_BUFFER_SIZE:-4096}
+logformat = ${DD_UWSGI_LOGFORMAT:-$DD_UWSGI_LOGFORMAT_DEFAULT}
 EOF
 
 if [ "${DD_LOGGING_HANDLER}" = "json_console" ]; then
