@@ -16,7 +16,7 @@ fi
 umask 0002
 
 # do the check with Django stack
-#python3 manage.py check
+python3 manage.py check
 
 UWSGI_INIFILE=dojo/uwsgi.ini
 cat > $UWSGI_INIFILE<<EOF
