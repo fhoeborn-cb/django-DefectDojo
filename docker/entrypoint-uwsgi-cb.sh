@@ -18,7 +18,7 @@ umask 0002
 # do the check with Django stack
 python3 manage.py check
 
-UWSGI_INIFILE=dojo/uwsgi.ini
+UWSGI_INIFILE=dojo/settings/uwsgi.ini
 cat > $UWSGI_INIFILE<<EOF
 [uwsgi]
 $DD_UWSGI_MODE = $DD_UWSGI_ENDPOINT
